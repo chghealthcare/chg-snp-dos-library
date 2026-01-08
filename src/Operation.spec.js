@@ -2,7 +2,7 @@
 
 const loadSync      = require('./helpers/loadSync')
 const { expect }    = require('chai')
-const { Validator } = require('@kravc/schema')
+const { Validator } = require('@chghealthcare/chg-snp-schema-library')
 
 const {
   Read,

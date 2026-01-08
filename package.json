@@ -1,5 +1,5 @@
 {
-  "name": "@kravc/dos",
+  "name": "@chghealthcare/chg-snp-dos-library",
   "version": "1.12.4",
   "description": "Convention-based, easy-to-use library for building API-driven serverless services.",
   "keywords": [
@@ -14,7 +14,7 @@
   "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "http://github.com/alexkravets/dos.git"
+    "url": "http://github.com/chghealthcare/chg-snp-dos-library.git"
   },
   "directories": {
     "src": "src"
@@ -22,10 +22,9 @@
   "scripts": {
     "test": "eslint src/ examples/ && NODE_APP_INSTANCE=test NODE_PATH=./ nyc --skip-full mocha \"./src/**/*.spec.js\""
   },
-  "author": "Alexander Kravets <a@kra.vc>",
   "license": "ISC",
   "dependencies": {
-    "@kravc/schema": "^2.7.6",
+    "@chghealthcare/chg-snp-schema-library": "^2.7.6",
     "cookie": "^1.0.1",
     "js-yaml": "^4.1.0",
     "jsonwebtoken": "^9.0.2",

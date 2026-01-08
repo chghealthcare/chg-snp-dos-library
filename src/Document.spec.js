@@ -3,7 +3,7 @@
 const loadSync      = require('./helpers/loadSync')
 const { expect }    = require('chai')
 const { Document }  = require('src')
-const { Validator } = require('@kravc/schema')
+const { Validator } = require('@chghealthcare/chg-snp-schema-library')
 
 const expectError = async (fn) => {
   try {
