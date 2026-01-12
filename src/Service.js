@@ -3,7 +3,7 @@
 const handler = require('./helpers/handler')
 const authorize = require('./helpers/authorize')
 const createSpec = require('./helpers/createSpec')
-const { Validator } = require('@kravc/schema')
+const { Validator } = require('@chghealthcare/chg-snp-schema-library')
 const OperationError = require('./errors/OperationError')
 const createSchemasMap = require('./helpers/createSchemasMap')
 const InvalidInputError = require('./errors/InvalidInputError')

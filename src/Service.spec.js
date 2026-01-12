@@ -1,6 +1,6 @@
 'use strict'
 
-const { Schema } = require('@kravc/schema')
+const { Schema } = require('@chghealthcare/chg-snp-schema-library')
 
 const Health        = require('examples/Health')
 const { expect }    = require('chai')

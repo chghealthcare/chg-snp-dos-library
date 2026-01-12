@@ -3,7 +3,7 @@
 const loadSync      = require('./helpers/loadSync')
 const { expect }    = require('chai')
 const { Component } = require('src')
-const { Validator } = require('@kravc/schema')
+const { Validator } = require('@chghealthcare/chg-snp-schema-library')
 
 class Profile extends Component {}
 Profile.schema = loadSync('examples/Profile.yaml')

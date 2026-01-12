@@ -1,7 +1,7 @@
 'use strict'
 
 // NOTE: Run service example:
-// $ npm i --save-dev @kravc/http
+// $ npm i --save-dev @chghealthcare/http
 // $ ./node_modules/.bin/http ./test/example`
 
 const Health        = require('./Health')

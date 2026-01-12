@@ -1,6 +1,6 @@
 'use strict'
 
-const { Schema } = require('@kravc/schema')
+const { Schema } = require('@chghealthcare/chg-snp-schema-library')
 const { isEmpty, cloneDeep } = require('lodash')
 
 const defaultId = require('./helpers/defaultId')

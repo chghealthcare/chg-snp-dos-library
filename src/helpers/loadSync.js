@@ -1,7 +1,7 @@
 'use strict'
 
 const { load }   = require('js-yaml')
-const { Schema } = require('@kravc/schema')
+const { Schema } = require('@chghealthcare/chg-snp-schema-library')
 const { readFileSync } = require('fs')
 
 const loadSync = (yamlPath) => {

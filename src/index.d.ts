@@ -1,4 +1,4 @@
-import type { Schema, SchemaAttributes } from '@kravc/schema';
+import type { Schema, SchemaAttributes } from '@chghealthcare/chg-snp-schema-library';
 
 export declare type SortOrder = 'asc' | 'desc';
 export declare type Context = Record<string, any>;
