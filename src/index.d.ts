@@ -169,6 +169,8 @@ export declare class JwtAuthorization {
     name?: string;
     algorithm?: string;
     cookieName?: string;
+    description?: string;
+    requirementName?: string;
     normalizePayload?: Function;
     tokenVerificationMethod?: Function;
     accessVerificationMethod?: (context: Context, payload: Record<string, unknown>) => [boolean, string?];
@@ -178,6 +180,8 @@ export declare class JwtAuthorization {
 export declare class SystemAuthorization {
   static createRequirement(options?: {
     name?: string;
+    description?: string;
+    requirementName?: string;
     accessVerificationMethod?: (context: Context) => [boolean, string?];
   }): Record<string, any>
 }

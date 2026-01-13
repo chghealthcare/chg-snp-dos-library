@@ -1,6 +1,6 @@
 {
   "name": "@chghealthcare/chg-snp-dos-library",
-  "version": "1.12.4",
+  "version": "1.12.6",
   "description": "Convention-based, easy-to-use library for building API-driven serverless services.",
   "keywords": [
     "Service",
