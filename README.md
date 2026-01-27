@@ -52,7 +52,7 @@ First, create a Document class that represents your data model:
 
 ```javascript
 // Profile.js
-const { Document } = require('@kravc/dos')
+const { Document } = require('@chghealthcare/chg-snp-dos-library')
 
 class Profile extends Document {}
 
@@ -84,9 +84,9 @@ Define operations for each CRUD action:
 
 ```javascript
 // CreateProfile.js
-const { Create } = require('@kravc/dos')
+const { Create } = require('@chghealthcare/chg-snp-dos-library')
 const Profile = require('./Profile')
-const JwtAuthorization = require('@kravc/dos/security/JwtAuthorization')
+const JwtAuthorization = require('@chghealthcare/chg-snp-dos-library/security/JwtAuthorization')
 
 class CreateProfile extends Create(Profile) {
   static get tags() {
@@ -108,7 +108,7 @@ module.exports = CreateProfile
 
 ```javascript
 // ReadProfile.js
-const { Read } = require('@kravc/dos')
+const { Read } = require('@chghealthcare/chg-snp-dos-library')
 const Profile = require('./Profile')
 
 class ReadProfile extends Read(Profile) {
@@ -128,7 +128,7 @@ module.exports = ReadProfile
 
 ```javascript
 // UpdateProfile.js
-const { Update } = require('@kravc/dos')
+const { Update } = require('@chghealthcare/chg-snp-dos-library')
 const Profile = require('./Profile')
 
 class UpdateProfile extends Update(Profile) {}
@@ -138,7 +138,7 @@ module.exports = UpdateProfile
 
 ```javascript
 // DeleteProfile.js
-const { Delete } = require('@kravc/dos')
+const { Delete } = require('@chghealthcare/chg-snp-dos-library')
 const Profile = require('./Profile')
 
 class DeleteProfile extends Delete(Profile) {}
@@ -148,7 +148,7 @@ module.exports = DeleteProfile
 
 ```javascript
 // IndexProfiles.js
-const { Index } = require('@kravc/dos')
+const { Index } = require('@chghealthcare/chg-snp-dos-library')
 const Profile = require('./Profile')
 
 class IndexProfiles extends Index(Profile) {}
@@ -162,7 +162,7 @@ Create a Service instance that brings together all your operations:
 
 ```javascript
 // index.js
-const { Service, handler } = require('@kravc/dos')
+const { Service, handler } = require('@chghealthcare/chg-snp-dos-library')
 const Profile = require('./Profile')
 const CreateProfile = require('./CreateProfile')
 const ReadProfile = require('./ReadProfile')
@@ -383,7 +383,7 @@ Operations are created using factory functions that take a Component class and o
 - **`Index(Component, componentAction = 'index')`**: Lists documents with pagination support
 
 ```javascript
-const { Create, Read, Update, Delete, Index } = require('@kravc/dos')
+const { Create, Read, Update, Delete, Index } = require('@chghealthcare/chg-snp-dos-library')
 const Profile = require('./Profile')
 
 // Create operation classes
@@ -687,7 +687,7 @@ Service automatically generates an OpenAPI 2.0 (Swagger) specification from all 
 - **Tags**: Automatically extracted from operation tags
 
 ```javascript
-const { Service } = require('@kravc/dos')
+const { Service } = require('@chghealthcare/chg-snp-dos-library')
 
 const modules = [
   Profile,
@@ -899,7 +899,7 @@ catch (error) {
 Service is designed to work with HTTP-based serverless platforms (AWS Lambda, Azure Functions, Google Cloud Functions, etc.). The `handler()` function creates a request handler that processes HTTP requests:
 
 ```javascript
-const { Service, handler } = require('@kravc/dos')
+const { Service, handler } = require('@chghealthcare/chg-snp-dos-library')
 
 const service = new Service(modules, { url: 'https://api.example.com/' })
 exports.handler = handler(service)
